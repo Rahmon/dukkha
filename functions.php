@@ -117,6 +117,8 @@ add_action( 'widgets_init', 'dukkha_widgets_init' );
  * Enqueue scripts and styles.
  */
 function dukkha_scripts() {
+	wp_enqueue_style( 'paper', get_template_directory_uri() . '/css/paper.min.css', array(), '0.3.0' );
+
 	wp_enqueue_style( 'dukkha-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'dukkha-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
