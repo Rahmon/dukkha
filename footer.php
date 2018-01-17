@@ -11,14 +11,14 @@
 
 ?>
 
-		</div><!-- #content -->
+			</div><!-- #content -->
 
-		<footer id="colophon" class="site-footer">
-			<div class="site-info">
-				<p><?php bloginfo( 'name' ); ?></p>
-			</div><!-- .site-info -->
-		</footer><!-- #colophon -->
-	</div><!-- .paper -->
+			<footer id="colophon" class="site-footer">
+				<div class="site-info">
+					<p><?php bloginfo( 'name' ); ?></p>
+				</div><!-- .site-info -->
+			</footer><!-- #colophon -->
+		
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
