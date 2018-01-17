@@ -158,3 +158,9 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+function add_class_to_menu_anchors( $atts ) {
+	$atts['class'] = 'paper-btn margin current';
+
+	return $atts;
+}
+add_filter( 'nav_menu_link_attributes', 'add_class_to_menu_anchors', 10 );
