@@ -58,10 +58,13 @@ https://github.com/papercss/papercss
 }
 
 .site-title > a {
+	font-family: 'Patrick Hand SC', sans-serif;
 	background-image: none;
 }
 
 .site-description {
+	font-family: 'Patrick Hand SC', sans-serif;
+	font-size: 2rem;
 	margin-top: 0;
 }
 
