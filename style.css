@@ -55,6 +55,7 @@ https://github.com/papercss/papercss
 --------------------------------------------------------------*/
 .site-title {
 	margin-bottom: 0;
+	font-size: 4rem;
 }
 
 .site-title > a {
