@@ -75,7 +75,7 @@ https://github.com/papercss/papercss
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-.menu.nav-menu li.menu-item {
+.menu li.menu-item {
 	display: inline
 }
 
