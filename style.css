@@ -79,6 +79,10 @@ https://github.com/papercss/papercss
 	display: inline
 }
 
+.menu li.menu-item::before {
+	content: none;
+}
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
