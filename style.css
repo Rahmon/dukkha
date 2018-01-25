@@ -75,6 +75,14 @@ https://github.com/papercss/papercss
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
+.main-navigation {
+	text-align: center;
+}
+
+ul.menu {
+	padding-left: 0;
+}
+
 .menu li.menu-item {
 	display: inline
 }
