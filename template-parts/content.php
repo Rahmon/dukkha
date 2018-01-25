@@ -19,7 +19,7 @@
 		endif;
 
 		if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
+		<div class="entry-meta article-meta">
 			<?php dukkha_posted_on(); ?>
 		</div><!-- .entry-meta -->
 		<?php
