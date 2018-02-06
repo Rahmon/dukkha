@@ -64,7 +64,7 @@ if ( ! function_exists( 'dukkha_entry_footer' ) ) :
 		}
 
 		if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-			echo '<span class="comments-link">';
+			echo '<span class="comments-link paper-btn">';
 			comments_popup_link(
 				sprintf(
 					wp_kses(
