@@ -52,14 +52,14 @@ if ( ! function_exists( 'dukkha_entry_footer' ) ) :
 			$categories_list = get_the_category_list( esc_html__( ', ', 'dukkha' ) );
 			if ( $categories_list ) {
 				/* translators: 1: list of categories. */
-				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'dukkha' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+				printf( '<div class="row"><span class="cat-links">' . esc_html__( 'Posted in %1$s', 'dukkha' ) . '</span></div>', $categories_list ); // WPCS: XSS OK.
 			}
 
 			/* translators: used between list items, there is a space after the comma */
 			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'dukkha' ) );
 			if ( $tags_list ) {
 				/* translators: 1: list of tags. */
-				printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'dukkha' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+				printf( '<div class="row"><span class="tags-links">' . esc_html__( 'Tagged %1$s', 'dukkha' ) . '</span></div>', $tags_list ); // WPCS: XSS OK.
 			}
 		}
 
