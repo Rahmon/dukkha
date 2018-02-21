@@ -169,10 +169,15 @@ function add_class_to_menu_anchors( $atts ) {
 add_filter( 'nav_menu_link_attributes', 'add_class_to_menu_anchors', 10 );
 
 function add_class_to_more_link( $link, $text ) {
-	return str_replace(
+	
+	$more_link = str_replace(
 		'more-link',
 		'more-link paper-btn',
 		$link
 	);
+
+	$more_link .= '<span class="comments-link paper-btn"><a href="http://local.wordpress.test/more-button/#comments">1 Comment<span class="screen-reader-text"> on More Button</span></a></span>';
+
+	return $more_link;
 }
 add_action( 'the_content_more_link', 'add_class_to_more_link', 10, 2 );
