@@ -176,8 +176,18 @@ function add_class_to_more_link( $link, $text ) {
 		$link
 	);
 
-	$more_link .= '<span class="comments-link paper-btn"><a href="http://local.wordpress.test/more-button/#comments">1 Comment<span class="screen-reader-text"> on More Button</span></a></span>';
+	$more_link .= '<span class="comments-link paper-btn 2"><a href="http://local.wordpress.test/more-button/#comments">1 Comment<span class="screen-reader-text"> on More Button</span></a></span>';
 
 	return $more_link;
 }
-add_action( 'the_content_more_link', 'add_class_to_more_link', 10, 2 );
+add_filter( 'the_content_more_link', 'add_class_to_more_link', 10, 2 );
+
+function add_comments_link_after_the_content( $content ) {
+
+	if ( ! strpos( $content, 'more-link' ) ) {
+		$content .= '<span class="comments-link paper-btn"><a href="http://local.wordpress.test/more-button/#comments">1 Comment<span class="screen-reader-text"> on More Button</span></a></span>';
+	}
+ 
+    return $content;
+}
+add_filter( 'the_content', 'add_comments_link_after_the_content' );
