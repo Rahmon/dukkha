@@ -168,15 +168,27 @@ function add_class_to_menu_anchors( $atts ) {
 }
 add_filter( 'nav_menu_link_attributes', 'add_class_to_menu_anchors', 10 );
 
-function add_class_to_more_link( $link, $text ) {
+function get_comments_btn() {
+	$comments_link = '';
+	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
+		$comments_link = '<span class="comments-link paper-btn">';
+		$comments_link .= '<a href="' . get_comments_link() . '">';
+		$comments_link .= get_comments_number_text();
+		$comments_link .= '</a></span>';
+	}
 	
+	return $comments_link;
+}
+
+function add_class_to_more_link( $link, $text ) {
+
 	$more_link = str_replace(
 		'more-link',
 		'more-link paper-btn',
 		$link
 	);
 
-	$more_link .= '<span class="comments-link paper-btn 2"><a href="http://local.wordpress.test/more-button/#comments">1 Comment<span class="screen-reader-text"> on More Button</span></a></span>';
+	$more_link .= get_comments_btn();
 
 	return $more_link;
 }
@@ -185,7 +197,7 @@ add_filter( 'the_content_more_link', 'add_class_to_more_link', 10, 2 );
 function add_comments_link_after_the_content( $content ) {
 
 	if ( ! strpos( $content, 'more-link' ) ) {
-		$content .= '<span class="comments-link paper-btn"><a href="http://local.wordpress.test/more-button/#comments">1 Comment<span class="screen-reader-text"> on More Button</span></a></span>';
+		$content .= get_comments_btn();
 	}
  
     return $content;
