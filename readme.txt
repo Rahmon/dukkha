@@ -1,7 +1,7 @@
 === Dukkha ===
 
 Contributors: rahmohn
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+Tags: custom-background, custom-logo, custom-menu, featured-images, e-commerce, threaded-comments, translation-ready
 
 Requires at least: 4.0
 Tested up to: 4.9.4
