@@ -99,6 +99,24 @@ ul.menu {
 }
 
 /*--------------------------------------------------------------
+## Post navigation
+--------------------------------------------------------------*/
+.posts-navigation {
+	overflow: auto;
+	margin-top: 2rem;
+}
+
+.nav-previous {
+	float: left;
+	padding: 1.8rem 0;
+}
+
+.nav-next {
+	float: right;
+	padding: 1.8rem 0;
+}
+
+/*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
 .screen-reader-text {

@@ -203,3 +203,11 @@ function add_comments_link_after_the_content( $content ) {
     return $content;
 }
 add_filter( 'the_content', 'add_comments_link_after_the_content' );
+
+
+add_filter('next_posts_link_attributes', 'posts_link_attributes');
+add_filter('previous_posts_link_attributes', 'posts_link_attributes');
+
+function posts_link_attributes() {
+    return 'class="paper-btn"';
+}
