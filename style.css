@@ -68,6 +68,14 @@ https://github.com/papercss/papercss
 	margin-top: 0;
 }
 
+.more-link.paper-btn {
+    margin-right: 2rem;
+}
+
+.entry-footer {
+	margin-top: 2rem;
+}
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/

@@ -190,14 +190,14 @@ function add_class_to_more_link( $link, $text ) {
 
 	$more_link .= get_comments_btn();
 
-	return $more_link;
+	return '<div class="row">' . $more_link . '</div>';
 }
 add_filter( 'the_content_more_link', 'add_class_to_more_link', 10, 2 );
 
 function add_comments_link_after_the_content( $content ) {
 
 	if ( ! strpos( $content, 'more-link' ) ) {
-		$content .= get_comments_btn();
+		$content .= '<div class="row">' . get_comments_btn() . '</div>';
 	}
  
     return $content;
