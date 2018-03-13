@@ -66,7 +66,8 @@ if ( post_password_required() ) {
 
 	endif; // Check for have_comments().
 
-	comment_form();
+	$args = array( 'class_submit' => 'submit paper-btn');
+	comment_form( $args );
 	?>
 
 </div><!-- #comments -->
