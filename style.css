@@ -28,6 +28,7 @@ https://github.com/papercss/papercss
 # Layout
 # Typography
 # Elements
+# Forms
 # Navigation
 	## Menus
 # Accessibility
@@ -160,6 +161,11 @@ ul.menu {
 h2.widget-title {
 	font-size: 2rem;
 	text-align: center;
+}
+
+.widget_search .search-field,
+.widget_search .search-submit {
+	display: initial;
 }
 
 /*--------------------------------------------------------------
