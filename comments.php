@@ -49,10 +49,11 @@ if ( post_password_required() ) {
 
 		<ol class="comment-list">
 			<?php
-				wp_list_comments( array(
-					'style'      => 'ol',
-					'short_ping' => true,
-				) );
+				// wp_list_comments( array(
+				// 	'style'      => 'ol',
+				// 	'short_ping' => true,
+				// ) );
+				wp_list_comments( array( 'callback' => 'dukkha_comments' ) );
 			?>
 		</ol><!-- .comment-list -->
 

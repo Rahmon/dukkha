@@ -211,3 +211,25 @@ add_filter('previous_posts_link_attributes', 'posts_link_attributes');
 function posts_link_attributes() {
     return 'class="paper-btn"';
 }
+
+/**
+ * Comments
+ */
+function dukkha_comments( $comment, $args, $depth ) {
+	$GLOBALS['comments'] = $comment;
+	?>
+	<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
+		<article id="comment-<?php comment_ID(); ?>" class="comment">
+			<div><?php comment_author(); ?></div>
+			<div class="comment-content"><?php comment_text(); ?></div>
+
+			<div class="reply">
+				<?php comment_reply_link( array_merge( $args, array(
+					'depth' => $depth ,
+					'max_depth' => $args['max_depth']
+				))); ?>
+			</div>
+		</article>
+	</li>
+	<?php
+}
