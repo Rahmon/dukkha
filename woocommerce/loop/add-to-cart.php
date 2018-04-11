@@ -15,7 +15,7 @@ echo apply_filters( 'woocommerce_loop_add_to_cart_link',
 		esc_attr( isset( $quantity ) ? $quantity : 1 ),
 		esc_attr( $product->get_id() ),
 		esc_attr( $product->get_sku() ),
-		esc_attr( isset( $class ) ? str_replace('button', 'paper-btn', $class ) : 'button paper' ),
+		esc_attr( isset( $class ) ? preg_replace( '/button/', 'paper-btn', $class, 1 ) : 'paper-btn' ),
 		esc_html( $product->add_to_cart_text() )
 	),
 $product );
