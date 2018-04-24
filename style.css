@@ -227,6 +227,10 @@ h2.widget-title {
 ul.products li::before {
 	content: '';
 }
+
+ul.products li.product {
+	text-indent: 0;
+}
 /*--------------------------------------------------------------
 ## Add to cart
 --------------------------------------------------------------*/
