@@ -1,6 +1,8 @@
 <?php
 /**
  * Loop Add to Cart
+ *
+ * @package WooCommerce/Templates
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

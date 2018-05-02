@@ -122,6 +122,27 @@ ul.menu {
 }
 
 /*--------------------------------------------------------------
+## Pagination
+--------------------------------------------------------------*/
+ul.page-numbers li {
+	text-indent: 0;
+}
+
+a.page-numbers {
+	background-image: none;
+}
+
+.woocommerce-pagination span.page-numbers,
+.woocommerce-pagination a.page-numbers {
+	padding: .8em !important;
+}
+
+.woocommerce-pagination a.page-numbers:hover,
+.woocommerce-pagination span.page-numbers.current {
+	background-color: #c1c0bd;
+}
+
+/*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
 .screen-reader-text {
@@ -224,13 +245,16 @@ h2.widget-title {
 /*--------------------------------------------------------------
 # WooCommerce
 --------------------------------------------------------------*/
-ul.products li::before {
+ul.products li::before,
+ul.page-numbers li::before {
 	content: '';
 }
 
 ul.products li.product {
 	text-indent: 0;
 }
+
+
 /*--------------------------------------------------------------
 ## Add to cart
 --------------------------------------------------------------*/
