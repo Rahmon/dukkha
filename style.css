@@ -254,6 +254,9 @@ ul.products li.product {
 	text-indent: 0;
 }
 
+.woocommerce span.onsale {
+	padding: 0;
+}
 
 /*--------------------------------------------------------------
 ## Add to cart
