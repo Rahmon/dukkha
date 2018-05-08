@@ -258,6 +258,11 @@ ul.products li.product {
 	padding: 0;
 }
 
+form.cart .paper-btn {
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+}
+
 /*--------------------------------------------------------------
 ## Add to cart
 --------------------------------------------------------------*/
