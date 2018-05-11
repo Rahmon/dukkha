@@ -285,6 +285,12 @@ ul.tabs.wc-tabs li {
 	white-space: nowrap;
 }
 
+.paper-btn>a,
+.stars a,
+ul.tabs.wc-tabs li a {
+	background-image: none;
+}
+
 /*--------------------------------------------------------------
 ## Add to cart
 --------------------------------------------------------------*/
