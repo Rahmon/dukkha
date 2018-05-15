@@ -233,3 +233,14 @@ function dukkha_comments( $comment, $args, $depth ) {
 	</li>
 	<?php
 }
+
+/**
+ * Change submit button on Review form in WooCommerce
+ */
+function change_submit_button( $review_form ) {
+	$review_form['id_submit']    = 'submit_dukkha';
+	$review_form['class_submit'] = 'paper-btn';
+
+	return $review_form;
+}
+add_filter( 'woocommerce_product_review_comment_form_args', 'change_submit_button' );
