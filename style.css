@@ -291,6 +291,10 @@ ul.tabs.wc-tabs li a {
 	background-image: none;
 }
 
+.woocommerce a.remove {
+	background-image: none;
+}
+
 /*--------------------------------------------------------------
 ## Add to cart
 --------------------------------------------------------------*/
