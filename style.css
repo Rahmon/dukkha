@@ -332,3 +332,10 @@ ul.tabs.wc-tabs li a {
 .products a.paper-btn {
 	display: inline-block;
 }
+
+/*--------------------------------------------------------------
+## Form checkout
+--------------------------------------------------------------*/
+.woocommerce-checkout .form-group .paper-check input+span:before {
+	vertical-align: unset;
+}
