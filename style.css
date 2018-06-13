@@ -263,6 +263,7 @@ h2.widget-title {
 # WooCommerce
 --------------------------------------------------------------*/
 
+.woocommerce li::before,
 ul.products li::before,
 ul.page-numbers li::before {
 	content: '';
