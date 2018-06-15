@@ -244,3 +244,12 @@ function change_submit_button( $review_form ) {
 	return $review_form;
 }
 add_filter( 'woocommerce_product_review_comment_form_args', 'change_submit_button' );
+
+/**
+ * Change order button on Checkout page in WooCommerce
+ */
+function change_order_button( $button ) {
+
+	return '<button type="submit" class="btn-secondary" name="woocommerce_checkout_place_order" id="place_order" value="Place order" data-value="Place order">Place order</button>';
+}
+add_filter( 'woocommerce_order_button_html', 'change_order_button' );
