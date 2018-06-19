@@ -41,6 +41,8 @@ https://github.com/papercss/papercss
 	## Galleries
 # WooCommerce
 	## Add to cart
+	## Form Checkout
+	## Order
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -338,4 +340,20 @@ ul.tabs.wc-tabs li a {
 --------------------------------------------------------------*/
 .woocommerce-checkout .form-group .paper-check input+span:before {
 	vertical-align: unset;
+}
+
+/*--------------------------------------------------------------
+## Order
+--------------------------------------------------------------*/
+.woocommerce-column--billing-address.col-6.col {
+	padding-left: 0;
+}
+
+.woocommerce-column--shipping-address.col-6.col {
+	padding-right: 0;
+}
+
+.woocommerce-customer-details--phone::before,
+.woocommerce-customer-details--email::before {
+	line-height: 1 !important;
 }
