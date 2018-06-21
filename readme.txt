@@ -4,12 +4,12 @@ Contributors: rahmohn
 Tags: custom-background, custom-logo, custom-menu, featured-images, e-commerce, threaded-comments, translation-ready
 
 Requires at least: 4.0
-Tested up to: 4.9.4
+Tested up to: 4.9.6
 Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
-A starter theme called dukkha.
+A theme called Dukkha based on PapperCSS framework.
 
 == Description ==
 
