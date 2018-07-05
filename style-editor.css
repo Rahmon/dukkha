@@ -1,3 +1,11 @@
 /**
 * Style for Gutenberg
 */
+
+@import url(https://fonts.googleapis.com/css?family=Neucha|Patrick+Hand+SC);
+
+.editor-post-title__block .editor-post-title__input {
+    font-family: 'Patrick Hand SC', sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+}
