@@ -178,7 +178,7 @@ add_filter( 'nav_menu_link_attributes', 'add_class_to_menu_anchors', 10 );
 
 function get_comments_btn() {
 	$comments_link = '';
-	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
+	if ( ! is_single() && ! is_page() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 		$comments_link = '<span class="comments-link paper-btn">';
 		$comments_link .= '<a href="' . get_comments_link() . '">';
 		$comments_link .= get_comments_number_text();
