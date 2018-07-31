@@ -6,6 +6,11 @@
 
 .editor-post-title__block .editor-post-title__input {
     font-family: 'Patrick Hand SC', sans-serif;
-    font-size: 3rem;
+    font-size: 60px;
     font-weight: 400;
+}
+
+.edit-post-visual-editor p {
+    font-family: Neucha,sans-serif;
+    font-size: 20px;
 }
