@@ -200,6 +200,10 @@ h2.widget-title {
 	text-align: center;
 }
 
+.widget_search {
+	padding-top: 2rem;
+}
+
 .widget_search .search-field,
 .widget_search .search-submit {
 	display: initial;
